@@ -1,0 +1,8 @@
+<h3><%= @actor_name_hash['name'] %></h3>
+<h3> - Movies:</h3><br>
+<ul>
+  <% @movies_actor.each do |x| %>
+  <% movie_id= "/movies/#{x['id']}" %>
+  <li><a href=<%= movie_id %>><%= "#{x['title']}" %></a></li>
+  <% end %>
+</ul>

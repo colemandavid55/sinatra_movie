@@ -1,0 +1,7 @@
+<h1>ACTORS</h1><br>
+<ul>
+  <% @actors.each do |x| %>
+  <% actor_id = "/actors/#{x['id']}" %>
+  <li><a href=<%= actor_id %>><%= "#{x['name']}" %></a></li>
+  <% end %>
+</ul>
